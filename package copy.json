@@ -1,0 +1,49 @@
+{
+  "name": "vueschool-forum",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "db:seed": "firebase firestore:delete --all-collections --yes && node firestoreImport"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^3.0.0-3",
+    "@hennge/vue3-pagination": "^1.0.17",
+    "@vee-validate/i18n": "^4.4.7",
+    "@vee-validate/rules": "^4.4.7",
+    "@vueuse/head": "^0.6.0",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.4",
+    "firebase": "^9.6.8",
+    "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "vee-validate": "^4.4.11",
+    "vue": "^3.0.0",
+    "vue-final-modal": "^3.4.2",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "firestore-export-import": "^0.14.0",
+    "vue-cli-plugin-webpack-bundle-analyzer": "~4.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
+}
